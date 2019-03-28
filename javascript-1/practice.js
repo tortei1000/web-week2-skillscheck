@@ -157,14 +157,12 @@ myNumbers.forEach(function(element, index){
 
 // Did you know that George Foreman has five sons named George? Let's go ahead and change everyone's name in the notGeorge array to George using .map. Call the new array 'forTheLoveOfGeorge'
 const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
-let forTheLoveOfGeorge = []
-    forTheLoveOfGeorge = notGeorge.map(function(name, i){
-      if(name !== "George"){
-        forTheLoveOfGeorge.splice(i,1, "George")
-        console.log(forTheLoveOfGeorge)
-      } 
-      
-  })
+let forTheLoveOfGeorge = notGeorge.map((name, index, arr) => {
+	console.log(name)
+	return name = "George"
+
+});
+	console.log(forTheLoveOfGeorge)
  
 //////////////////PROBLEM 19////////////////////
 
